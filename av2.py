@@ -6,17 +6,15 @@ def inserir_lancamento():
     return codigo, quant, valor_unit
 
 #Inicia a variável que irá guardar o valor total a ser pago
-valor_total = 0
+    valor_total = 0
 
 #Insere os dados de 5 lançamentos
-for i in range(5):
+    for i in range(5):
     print(f"Lançamento {i+1}")
     codigo, quant, valor_unit = inserir_lancamento()
-    valor_lancamento += quant * valor_unit
-    valor_total += valor_lancamento
-    print(f"Valor do lançamento {i+1}: R$ {valor_lancamento:.2f}")
+    valor_total += quant * valor_unit
     print(f"Subtotal após lançamento {i+1}: R$ {valor_total:.2f}\n")
 
-# Mostra o valor total da soma dos 5 lançamentos
-print(f"Soma total dos 5 lançamentos: R$ {valor_total:.2f}")
+#Valor total dos 5 lançamentos a ser pago
+    print(f"Valor total dos 5 lançamentos a ser pago: R$ {valor_total:.2f} ")
     

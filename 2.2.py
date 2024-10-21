@@ -16,18 +16,21 @@ def calcular_raizes(a, b, c):
     return raiz1, raiz2
 
 # Captura os coeficientes da equação
-    a = float(input("Digite o valor de 'a': "))
-    b = float(input("Digite o valor de 'b': "))
-    c = float(input("Digite o valor de 'c': "))
+    try:
+        a = float(input("Digite o valor de 'a': "))
+        b = float(input("Digite o valor de 'b': "))
+        c = float(input("Digite o valor de 'c': "))
+    except ValueError:
+        print("Erro: Todos os coeficientes devem ser números válidos.")
+    else:
+        # Calcular as raizes
+        resultado = calcular_raizes(a, b, c)
 
-# Calcular as raizes
-resultado = calcular_raizes(a, b, c)
-
-# Mostra o resultado
-if isinstance(resultado, str):
-    print(resultado)
-else:
-    raiz1, raiz2 = resultado
-    print(f"As raízes da equação são: {raiz1:.5f} e {raiz2:.5f}")
+        # Mostra o resultado
+        if isinstance(resultado, str):
+            print(resultado)
+        else:
+            raiz1, raiz2 = resultado
+                print(f"As raízes da equação são: {raiz1:.5f} e {raiz2:.5f}")
 
 

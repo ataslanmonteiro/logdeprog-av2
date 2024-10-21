@@ -12,9 +12,11 @@ valor_total = 0
 for i in range(5):
     print(f"Lançamento {i+1}")
     codigo, quant, valor_unit = inserir_lancamento()
-    valor_total += quant * valor_unit
+    valor_lancamento += quant * valor_unit
+    valor_total += valor_lancamento
+    print(f"Valor do lançamento {i+1}: R$ {valor_lancamento:.2f}")
     print(f"Subtotal após lançamento {i+1}: R$ {valor_total:.2f}\n")
 
-#Valor total dos 5 lançamentos a ser pago
-print(f"Valor total a ser pago: R$ {valor_total:.2f}")
+# Mostra o valor total da soma dos 5 lançamentos
+print(f"Soma total dos 5 lançamentos: R$ {valor_total:.2f}")
     

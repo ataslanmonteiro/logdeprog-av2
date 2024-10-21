@@ -8,7 +8,7 @@ def inserir_lancamento():
 # Inicia a variável que irá guardar o valor total a ser pago
 valor_total = 0
 
-# Captura os dados de 5 lançamentos
+# Guarda os dados de 5 lançamentos
 for i in range(5):
     print(f"Lançamento do produto {i+1}")
     codigo, quant, valor_unit = inserir_lancamento()

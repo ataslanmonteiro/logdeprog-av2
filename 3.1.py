@@ -8,5 +8,6 @@ while True:
     # Verifica se a senha está correta
     if senha == senha_correta:
         print("Acesso Permitido")
+        break
     else:
         print("Senha Inválida")

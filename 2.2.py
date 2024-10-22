@@ -8,7 +8,7 @@ def calcular_raizes(a, b, c):
     delta = b ** 2 - 4 * a * c
 
     if delta < 0:
-        return "Impossível calcular: O valor de 'delta' não pode ser negativo"
+        return "Impossível calcular: O valor de 'delta' não pode ser negativo."
     
     raiz1 = (-b + math.sqrt(delta)) / (2 * a)
     raiz2 = (-b - math.sqrt(delta)) / (2 * a)

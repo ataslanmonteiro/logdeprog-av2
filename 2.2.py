@@ -31,7 +31,7 @@ else:
         print(resultado)
     else:
         raiz1, raiz2 = resultado
-        print(f"As raízes da equação são: x1: {raiz1:.5f} e {raiz2:.5f}")
+        print(f"As raízes da equação são:")
         print(f" x1 = {raiz1:.5f}")
         print(f" x2 = {raiz2:.5f}")
 

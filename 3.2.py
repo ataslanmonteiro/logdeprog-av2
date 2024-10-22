@@ -8,7 +8,7 @@ out_count = 0
 # Loop pra ler os valores inteiros X
 for _ in range(N):
     X = int(input("Digite um valor inteiro: "))
-    if 10 < X < 20:
+    if 10 <= X < 20:
         in_count += 1
     else:
         out_count += 1
